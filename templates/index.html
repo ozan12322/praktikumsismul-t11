@@ -74,7 +74,10 @@
               <!-- logo -->
               <div class="site-logo">
                 <a href="/">
-                  <img src="assets/img/logo.png" alt="" />
+                  <img
+                    src="{{ url_for('static', filename = 'assets/img/logo.png') }}"
+                    alt=""
+                  />
                 </a>
               </div>
               <!-- logo -->
@@ -83,45 +86,24 @@
               <nav class="main-menu">
                 <ul>
                   <li class="current-list-item">
-                    <a href="#">Home</a>
-                    <ul class="sub-menu">
-                      <li><a href="index.html">Static Home</a></li>
-                      <li><a href="index_2.html">Slider Home</a></li>
-                    </ul>
+                    <a href="/">Home</a>
                   </li>
-                  <li><a href="about.html">About</a></li>
+                  <li><a href="/about">About</a></li>
                   <li>
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                      <li><a href="404.html">404 page</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="cart.html">Cart</a></li>
-                      <li><a href="checkout.html">Check Out</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li><a href="news.html">News</a></li>
-                      <li><a href="shop.html">Shop</a></li>
-                    </ul>
+                    <a href="/news">News</a>
                   </li>
+                  <li><a href="contact">Contact</a></li>
                   <li>
-                    <a href="news.html">News</a>
+                    <a href="/shop">Shop</a>
                     <ul class="sub-menu">
-                      <li><a href="news.html">News</a></li>
-                      <li><a href="single-news.html">Single News</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li>
-                    <a href="shop.html">Shop</a>
-                    <ul class="sub-menu">
-                      <li><a href="shop.html">Shop</a></li>
-                      <li><a href="checkout.html">Check Out</a></li>
-                      <li><a href="single-product.html">Single Product</a></li>
-                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="/shop">Shop</a></li>
+                      <li><a href="/checkout">Check Out</a></li>
+                      <li><a href="/cart">Cart</a></li>
                     </ul>
                   </li>
                   <li>
                     <div class="header-icons">
-                      <a class="shopping-cart" href="cart.html"
+                      <a class="shopping-cart" href="cart"
                         ><i class="fas fa-shopping-cart"></i
                       ></a>
                       <a class="mobile-hide search-bar-icon" href="#"
@@ -174,8 +156,8 @@
                 <p class="subtitle">Gurih & Pedasnya Pas!</p>
                 <h1>Kripik Krenyes</h1>
                 <div class="hero-btns">
-                  <a href="shop.html" class="boxed-btn">Shop Now!</a>
-                  <a href="contact.html" class="bordered-btn">Contact Us</a>
+                  <a href="/shop" class="boxed-btn">Shop Now!</a>
+                  <a href="/contact" class="bordered-btn">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -256,7 +238,7 @@
               </div>
               <h3>Molring Pedas</h3>
               <p class="product-price"><span>Per pcs</span> 85$</p>
-              <a href="cart.html" class="cart-btn"
+              <a href="/cart" class="cart-btn"
                 ><i class="fas fa-shopping-cart"></i> Add to Cart</a
               >
             </div>
@@ -272,7 +254,7 @@
               </div>
               <h3>Molring Pedas</h3>
               <p class="product-price"><span>Per pcs</span> 70$</p>
-              <a href="cart.html" class="cart-btn"
+              <a href="/cart" class="cart-btn"
                 ><i class="fas fa-shopping-cart"></i> Add to Cart</a
               >
             </div>
@@ -288,7 +270,7 @@
               </div>
               <h3>Molring Pedas</h3>
               <p class="product-price"><span>Per pcs</span> 35$</p>
-              <a href="cart.html" class="cart-btn"
+              <a href="/cart" class="cart-btn"
                 ><i class="fas fa-shopping-cart"></i> Add to Cart</a
               >
             </div>
@@ -346,7 +328,7 @@
                 </div>
               </div>
             </div>
-            <a href="cart.html" class="cart-btn mt-3"
+            <a href="/cart" class="cart-btn mt-3"
               ><i class="fas fa-shopping-cart"></i> Add to Cart</a
             >
           </div>
@@ -509,11 +491,11 @@
             <div class="footer-box pages">
               <h2 class="widget-title">Pages</h2>
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Shop</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Shop</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
           </div>
