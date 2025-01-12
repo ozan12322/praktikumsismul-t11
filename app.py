@@ -18,9 +18,17 @@ def news():
 def contact():
     return render_template("contact.html")
 
-# @app.route("/shop")
-# def about():
-#     return render_template("about.html")
+@app.route("/shop")
+def shop():
+    return render_template("shop.html")
+
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
+
+@app.route("/checkout")
+def checkout():
+    return render_template("checkout.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
