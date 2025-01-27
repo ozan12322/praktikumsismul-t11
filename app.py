@@ -34,5 +34,13 @@ def checkout():
 def dashboard():
     return render_template("admin/dashboard.html")
 
+@app.route("/login")
+def login():
+    return render_template("auth/login.html")
+
+@app.route("/register")
+def register():
+    return render_template("auth/register.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
