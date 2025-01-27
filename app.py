@@ -30,5 +30,9 @@ def cart():
 def checkout():
     return render_template("checkout.html")
 
+@app.route("/dashboard")
+def dashboard():
+    return render_template("admin/dashboard.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
